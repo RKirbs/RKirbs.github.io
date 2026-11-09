@@ -1,0 +1,15 @@
+# Project cards shown on the Home and Projects pages.
+# An item with a `path` links to its project page; one without (planned work) shows as a card only.
+- title: "Competitive Fortnite: Prize Pools, Engagement and Regional Fairness"
+  subtitle: "✓ Completed · November 2026"
+  description: "An end-to-end R and Quarto study of $209M in esports prize money: how prize pools relate to audience attention, who earns the money, and whether regional prize splits match player bases."
+  image: images/fortnite-cover.svg
+  path: projects/fortnite-esports/index.qmd
+  categories: [Completed, R, Quarto, Econometrics, Web scraping]
+  order: 1
+- title: "How Efficient Are Sports Betting Markets?"
+  subtitle: "◐ In progress"
+  description: "A market-efficiency study in R and Quarto: logging odds across six U.S. sportsbooks over several weeks to measure how often pricing gaps (arbitrage) appear, how long they last, how large they are, and which books are slowest to move."
+  image: images/arbitrage.svg
+  categories: [In progress, R, Quarto, Market efficiency]
+  order: 2

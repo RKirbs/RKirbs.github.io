@@ -1,0 +1,56 @@
+---
+pagetitle: "Robert Kirby | Economics, Finance & Business Analytics"
+listing:
+  id: featured
+  contents: projects.yml
+  type: grid
+  grid-columns: 2
+  image-height: 230px
+  fields: [image, title, subtitle, description]
+  sort: "order"
+---
+
+::: {.hero}
+# Robert Kirby
+
+[Economics · Finance · Business Analytics & Information Systems]{.tagline}
+
+I'm a senior at Xavier University completing a triple major in Economics, Finance, and Business Analytics & Information Systems. I work with data end to end: collecting it, checking it, modelling it, and explaining what it means in plain language. This site collects my projects, both finished work with full code and write-ups and projects that are in progress.
+
+::: {.hero-buttons}
+[View projects](projects.qmd){.btn .btn-primary}
+[Resume](resume.qmd){.btn .btn-outline-primary}
+[LinkedIn](https://www.linkedin.com/in/robert-h-kirby/){.btn .btn-outline-primary}
+[Email me](mailto:RobbyHKirby@gmail.com){.btn .btn-outline-primary}
+:::
+:::
+
+::: {.facts}
+::: {.fact}
+[Education]{.label}
+[Xavier University, B.S.B.A.]{.value}
+:::
+::: {.fact}
+[Graduating]{.label}
+[May 2027]{.value}
+:::
+::: {.fact}
+[GPA]{.label}
+[3.6 / 4.0 · Dean's List]{.value}
+:::
+::: {.fact}
+[Certifications]{.label}
+[Bloomberg Market Concepts · Tableau Desktop Specialist]{.value}
+:::
+:::
+
+### Tools and methods
+
+::: {.chips}
+[R / RStudio]{} [Python]{} [SQL]{} [Excel]{} [Tableau]{} [Bloomberg Terminal]{} [Quarto]{} [Econometrics]{} [Regression analysis]{} [Financial modeling]{} [Valuation]{} [Forecasting]{}
+:::
+
+## Projects
+
+::: {#featured}
+:::

@@ -1,0 +1,14 @@
+---
+title: "Projects"
+subtitle: "Finished work with full code and write-ups, plus projects currently in progress."
+listing:
+  contents: projects.yml
+  type: grid
+  grid-columns: 2
+  image-height: 230px
+  fields: [image, title, subtitle, description, categories]
+  categories: true
+  sort: "order"
+  filter-ui: false
+  sort-ui: false
+---

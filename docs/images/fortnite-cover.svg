@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460">
+  <rect width="800" height="460" fill="#fcfcfb"/>
+
+  <!-- Title -->
+  <text x="60" y="72" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="700" fill="#1f2328">Competitive Fortnite</text>
+  <text x="60" y="108" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#52514e">Prize pools · audience attention · regional fairness</text>
+
+  <!-- Headline numbers (from the project's verified data) -->
+  <g font-family="Helvetica, Arial, sans-serif">
+    <text x="60" y="190" font-size="44" font-weight="700" fill="#2a78d6">$209M</text>
+    <text x="60" y="216" font-size="18" fill="#52514e">prize money analysed</text>
+    <text x="60" y="282" font-size="44" font-weight="700" fill="#2a78d6">2,674</text>
+    <text x="60" y="308" font-size="18" fill="#52514e">tournaments</text>
+    <text x="60" y="374" font-size="44" font-weight="700" fill="#2a78d6">11,443</text>
+    <text x="60" y="400" font-size="18" fill="#52514e">players</text>
+  </g>
+
+  <!-- Mini chart: yearly prize money 2018-2025 ($M: 19.9, 80.8, 18.5, 23.0, 18.7, 19.7, 12.4, 12.9), scaled to 200px max -->
+  <g>
+    <line x1="430" y1="380" x2="750" y2="380" stroke="#d9d8d3" stroke-width="2"/>
+    <rect x="440" y="331" width="28" height="49"  rx="4" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="478" y="180" width="28" height="200" rx="4" fill="#2a78d6"/>
+    <rect x="516" y="334" width="28" height="46"  rx="4" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="554" y="323" width="28" height="57"  rx="4" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="592" y="334" width="28" height="46"  rx="4" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="630" y="331" width="28" height="49"  rx="4" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="668" y="349" width="28" height="31"  rx="4" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="706" y="348" width="28" height="32"  rx="4" fill="#2a78d6" fill-opacity="0.55"/>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" fill="#52514e">
+    <text x="492" y="168" font-size="17" font-weight="700" text-anchor="middle" fill="#1f2328">$80.8M</text>
+    <text x="492" y="148" font-size="15" text-anchor="middle">World Cup</text>
+    <text x="454" y="404" font-size="15" text-anchor="middle">2018</text>
+    <text x="720" y="404" font-size="15" text-anchor="middle">2025</text>
+    <text x="590" y="436" font-size="16" text-anchor="middle">Prize money by year</text>
+  </g>
+</svg>

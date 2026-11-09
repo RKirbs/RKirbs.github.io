@@ -1,0 +1,93 @@
+---
+title: "Resume"
+subtitle: "[RobbyHKirby@gmail.com](mailto:RobbyHKirby@gmail.com) · [Kirbyr1@xavier.edu](mailto:Kirbyr1@xavier.edu) · [LinkedIn](https://www.linkedin.com/in/robert-h-kirby/) · [GitHub](https://github.com/RKirbs)"
+---
+
+::: {.resume}
+
+## Summary
+
+Triple major in Economics, Finance, and Business Analytics & Information Systems graduating May 2027. Skilled in financial modeling, valuation, and econometrics, using Python, SQL, R, Excel, and Tableau to forecast performance and turn complex data into actionable decisions.
+
+## Education
+
+::: {.role}
+[Xavier University, Cincinnati, OH]{} [Expected May 2027]{.when}
+:::
+[B.S. in Business Administration · Triple Major: Economics, Finance, and Business Analytics & Information Systems]{.sub}
+
+GPA: 3.6/4.0 · Dean's List
+
+**Relevant coursework:** Econometrics, Microeconomic Analysis, Macroeconomic Analysis, Fintech, Financial Statement Analysis, Financial Modeling, Firm Valuation, Investments, Data Modeling & Management, Programming in Analytics, Business Analytics, Intro to App Development, Managerial Accounting
+
+## Projects
+
+::: {.role}
+[[Competitive Fortnite: Prize Pools, Engagement and Regional Fairness](projects/fortnite-esports/index.qmd)]{} [Completed · Nov 2026]{.when}
+:::
+
+- Built a reproducible R pipeline collecting $209M of prize data across 2,674 tournaments, plus Twitch, Google Trends, World Bank and Census data, with automated checks reconciling every total to its source.
+- Used an event study, inequality measures and regional allocation ratios tested under three proxies; found tournaments don't drive engagement and that Europe's prize allocation is proportional, contrary to a common belief.
+
+::: {.role}
+[How Efficient Are Sports Betting Markets?]{} [In progress]{.when}
+:::
+
+- Market-efficiency study in R: logging odds across six U.S. sportsbooks over several weeks to measure how often arbitrage opportunities appear, how long they last, and how large they are.
+
+## Experience
+
+::: {.role}
+[Independent Digital Content Creator · Founder & Operator]{} [March 2017 – Present · Remote]{.when}
+:::
+
+- Created and scaled multiple digital brands to 100k+ followers using performance analytics, building a self-sustaining, multi-stream revenue operation.
+- Managed revenue and expense tracking across digital content brands, maintaining detailed financial records for sponsorship, advertising, and affiliate income.
+- Built revenue forecasts and conducted variance analysis to evaluate performance trends and adjust strategy.
+- Analyzed sponsorship ROI by measuring revenue relative to production cost and time investment, reallocating resources toward higher-margin opportunities.
+- Developed Excel financial models tracking monthly revenue, expenses, and profitability across content channels, using SUMIFS and pivot tables to identify seasonal trends and optimize partnership timing.
+
+::: {.role}
+[Smolak Farms · North Andover, MA]{} [June 2021 – August 2026]{.when}
+:::
+[Lead Baker & Production Planner · May 2026 – August 2026]{.sub}
+
+- Analyzed daily sales data to identify top-selling products and set production quantities, matching output to customer demand and limiting waste.
+- Adjusted menus and product mix based on sales trends and available inventory to maximize sell-through.
+- Opened the bakery at 5:00 a.m. daily, preparing baked goods and grill items ahead of peak customer traffic.
+- Planned and ran large-scale farm events, including seasonal festivals, coordinating food production for high-volume crowds.
+
+[Shift Leader · June 2021 – August 2025]{.sub}
+
+- Reconciled cash drawers handling up to $50,000+ daily during peak seasons and completed end-of-day financial reporting every shift with 100% accuracy.
+- Monitored inventory levels and identified variances between expected and actual stock, supporting accurate financial and operational reporting.
+- Supervised shift operations during high-volume periods, coordinating team members and maintaining efficient service.
+
+::: {.role}
+[Nason's Stone House Farm · Boxford, MA]{} [May 2018 – June 2021]{.when}
+:::
+[Store Associate]{.sub}
+
+- Reconciled the cash register daily to ensure accurate balances and drawer accountability while managing the storefront.
+
+## Leadership & Activities
+
+::: {.role}
+[Xavier University Disc Golf Club · Founder & President]{} [September 2025 – Present]{.when}
+:::
+
+- Founded and developed campus organization, managing administrative, operational, and financial responsibilities.
+- Prepared and submitted a formal budget proposal to university administration to secure institutional funding.
+- Negotiated sponsorship partnerships with equipment companies, securing product support through direct outreach.
+
+## Skills & Certifications
+
+**Economics & Finance:** Econometrics, Regression Analysis, Financial Modeling, Financial Statement Analysis, Forecasting, Variance Analysis, Budget Tracking, Valuation, Statistical Modeling
+
+**Technical:** Excel (PivotTables, XLOOKUP, INDEX/MATCH, SUMIFS), SQL, Python, R/RStudio, Tableau, Bloomberg Terminal
+
+**Certifications:** Bloomberg Market Concepts (BMC), Tableau Desktop Specialist
+
+**Languages:** Intermediate Spanish
+
+:::

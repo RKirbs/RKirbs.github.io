@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs          # GitHub Pages serves the site from /docs
+
+website:
+  title: "Robert Kirby"
+  description: "Economics, Finance and Business Analytics: data projects in R, Python and SQL."
+  site-url: "https://rkirbs.github.io"
+  favicon: images/favicon.svg
+  page-navigation: false
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: resume.qmd
+        text: Resume
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/robert-h-kirby/
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/RKirbs
+        aria-label: GitHub
+      - icon: envelope
+        href: mailto:RobbyHKirby@gmail.com
+        aria-label: Email
+  page-footer:
+    left: "© 2026 Robert Kirby"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
