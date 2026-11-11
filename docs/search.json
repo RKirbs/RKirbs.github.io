@@ -11,7 +11,7 @@
     "href": "index.html#projects",
     "title": "Robert Kirby",
     "section": "Projects",
-    "text": "Projects\n\n\n\n\n\n\n\n\n\n\nCompetitive Fortnite: Prize Pools, Engagement and Regional Fairness\n\n\n✓ Completed · November 2026\n\n\nAn end-to-end R and Quarto study of $209M in esports prize money: how prize pools relate to audience attention, who earns the money, and whether regional prize splits match…\n\n\n\n\n\n\n\n\n\n\n\n\nHow Efficient Are Sports Betting Markets?\n\n\n◐ In progress\n\n\nA market-efficiency study in R and Quarto: logging odds across six U.S. sportsbooks over several weeks to measure how often pricing gaps (arbitrage) appear, how long they…\n\n\n\n\n\nNo matching items"
+    "text": "Projects\n\n\n\n\n\n\n\n\n\n\nThe Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle\n\n\n✓ Completed · November 2026\n\n\nAn R and Quarto study of 30 NBA seasons and 6.3 million shots that turns basketball slang into a measurable index, ranks every qualifying scorer since 1996-97, and tests it…\n\n\n\n\n\n\n\n\n\n\n\n\nCompetitive Fortnite: Prize Pools, Engagement and Regional Fairness\n\n\n✓ Completed · November 2026\n\n\nAn end-to-end R and Quarto study of $209M in esports prize money: how prize pools relate to audience attention, who earns the money, and whether regional prize splits match…\n\n\n\n\n\n\n\n\n\n\n\n\nHow Efficient Are Sports Betting Markets?\n\n\n◐ In progress\n\n\nA market-efficiency study in R and Quarto: logging odds across six U.S. sportsbooks over several weeks to measure how often pricing gaps (arbitrage) appear, how long they…\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/fortnite-esports/index.html",
@@ -91,10 +91,38 @@
     "text": "Economics & Finance: Econometrics, Regression Analysis, Financial Modeling, Financial Statement Analysis, Forecasting, Variance Analysis, Budget Tracking, Valuation, Statistical Modeling\nTechnical: Excel (PivotTables, XLOOKUP, INDEX/MATCH, SUMIFS), SQL, Python, R/RStudio, Tableau, Bloomberg Terminal\nCertifications: Bloomberg Market Concepts (BMC), Tableau Desktop Specialist\nLanguages: Intermediate Spanish"
   },
   {
+    "objectID": "projects/ethical-hooper-index/index.html",
+    "href": "projects/ethical-hooper-index/index.html",
+    "title": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle",
+    "section": "",
+    "text": "Read the full report Search any player View the code on GitHub"
+  },
+  {
+    "objectID": "projects/ethical-hooper-index/index.html#the-question",
+    "href": "projects/ethical-hooper-index/index.html#the-question",
+    "title": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle",
+    "section": "The question",
+    "text": "The question\n“Ethical hooper” is basketball slang for a player who scores through pure skill (clean footwork, natural shot-making, smooth handles) rather than foul-baiting, flopping, or jumping into defenders to draw a whistle. I wanted to know whether that idea could be measured. Who are the most and least “ethical” scorers since 1996-97? And when the NBA told referees in 2021-22 to stop rewarding “non-basketball moves,” did it hit the players my index had flagged?"
+  },
+  {
+    "objectID": "projects/ethical-hooper-index/index.html#what-i-did",
+    "href": "projects/ethical-hooper-index/index.html#what-i-did",
+    "title": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle",
+    "section": "What I did",
+    "text": "What I did\n\nBuilt the dataset from 30 seasons of NBA play-by-play and shot charts (1996-97 to 2025-26, regular season and playoffs): 6.3 million shots and every foul and free throw, linked to official minutes and positions from Basketball Reference.\nValidated it against independent sources. My counts of shooting fouls drawn, and-ones, offensive fouls and assisted shots match Basketball Reference’s own tables (correlations of 0.998 or higher), and attempts, free throws and turnovers match official totals within ±2 for every 1,000-minute season. The checks also caught real problems: 16 games missing from the source archive, a 2025-26 change in how the NBA logs end-of-quarter heaves, and Hall of Famers’ playoff seasons filed under a different name.\nTrained an expected-field-goal model (xgboost) on shot location, distance, shot type, game clock and season, but never on who took the shot. It beat a zone-average baseline on a held-out season (log-loss 0.639 vs. 0.657) and is closely calibrated.\nDesigned the index from eight components on two axes. Skill: shot-making above expected, self-created makes, shot difficulty and clean footwork. Whistle: free throws beyond what a player’s shot diet predicts, three-point fouls drawn, free-throw share of points, and and-ones on jumpers. I used empirical-Bayes shrinkage so small samples don’t create fake extremes, and standardized everything within season so eras compare fairly.\nRan a difference-in-differences and event study of the 2021-22 rule change, with a placebo rule date and a separate treatment window to rule out regression to the mean.\nPublished it as an eight-page Quarto website with searchable rankings and an interactive player lookup."
+  },
+  {
+    "objectID": "projects/ethical-hooper-index/index.html#what-i-found",
+    "href": "projects/ethical-hooper-index/index.html#what-i-found",
+    "title": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle",
+    "section": "What I found",
+    "text": "What I found\n\nSteve Nash is the most ethical hooper of the last 30 years (career score 87.7 out of 100), followed by Payton Pritchard, Ish Smith, Nikola Vučević and Chris Paul. James Harden ranks last of 417 qualifying careers (10.7).\nThe style is a real, lasting trait: a player’s score correlates 0.74 with the next season’s, and the rankings barely change under alternative weightings (rank correlations of 0.89 to 0.99).\nThe crackdown worked league-wide: three-point shooting fouls fell from 1.42 to 1.08 per 100 attempts in one season. The apparent extra drop for prior foul-drawers turned out to be mostly regression to the mean, since a fake “placebo” rule date shows a similar decline.\nBut the index predicted who lost efficiency: players with higher pre-rule Whistle Scores lost 0.38 points of true shooting per standard deviation afterward (p = 0.049), while the placebo showed nothing (p = 0.81).\n\n\n\n\nThe Ethical Hooper map: every qualifying career, Skill Score vs. Whistle Score\n\n\n\n\n\nFoul-drawers lost efficiency after the 2021-22 crackdown\n\n\nTools: R (data.table, arrow, xgboost, fixest, ggplot2, gt, reactable), Quarto with Observable JS, renv, Git/GitHub."
+  },
+  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Competitive Fortnite: Prize Pools, Engagement and Regional Fairness\n\n\n✓ Completed · November 2026\n\n\n\nCompleted\n\nR\n\nQuarto\n\nEconometrics\n\nWeb scraping\n\n\n\nAn end-to-end R and Quarto study of $209M in esports prize money: how prize pools relate to audience attention, who earns the money, and whether regional prize splits match…\n\n\n\n\n\n\n\n\n\n\n\n\nHow Efficient Are Sports Betting Markets?\n\n\n◐ In progress\n\n\n\nIn progress\n\nR\n\nQuarto\n\nMarket efficiency\n\n\n\nA market-efficiency study in R and Quarto: logging odds across six U.S. sportsbooks over several weeks to measure how often pricing gaps (arbitrage) appear, how long they…\n\n\n\n\n\nNo matching items"
+    "text": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle\n\n\n✓ Completed · November 2026\n\n\n\nCompleted\n\nR\n\nQuarto\n\nMachine learning\n\nCausal inference\n\n\n\nAn R and Quarto study of 30 NBA seasons and 6.3 million shots that turns basketball slang into a measurable index, ranks every qualifying scorer since 1996-97, and tests it…\n\n\n\n\n\n\n\n\n\n\n\n\nCompetitive Fortnite: Prize Pools, Engagement and Regional Fairness\n\n\n✓ Completed · November 2026\n\n\n\nCompleted\n\nR\n\nQuarto\n\nEconometrics\n\nWeb scraping\n\n\n\nAn end-to-end R and Quarto study of $209M in esports prize money: how prize pools relate to audience attention, who earns the money, and whether regional prize splits match…\n\n\n\n\n\n\n\n\n\n\n\n\nHow Efficient Are Sports Betting Markets?\n\n\n◐ In progress\n\n\n\nIn progress\n\nR\n\nQuarto\n\nMarket efficiency\n\n\n\nA market-efficiency study in R and Quarto: logging odds across six U.S. sportsbooks over several weeks to measure how often pricing gaps (arbitrage) appear, how long they…\n\n\n\n\n\nNo matching items"
   }
 ]

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460">
+  <rect width="800" height="460" fill="#fcfcfb"/>
+
+  <!-- Title -->
+  <text x="60" y="72" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="700" fill="#1f2328">The Ethical Hooper Index</text>
+  <text x="60" y="108" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#52514e">NBA scoring · skill vs. the whistle · 1996-97 to 2025-26</text>
+
+  <!-- Headline numbers (from the project's data/final outputs) -->
+  <g font-family="Helvetica, Arial, sans-serif">
+    <text x="60" y="190" font-size="44" font-weight="700" fill="#2a78d6">6.3M</text>
+    <text x="60" y="216" font-size="18" fill="#52514e">shots modelled</text>
+    <text x="60" y="282" font-size="44" font-weight="700" fill="#2a78d6">30</text>
+    <text x="60" y="308" font-size="18" fill="#52514e">seasons of play-by-play</text>
+    <text x="60" y="374" font-size="44" font-weight="700" fill="#2a78d6">417</text>
+    <text x="60" y="400" font-size="18" fill="#52514e">careers ranked</text>
+  </g>
+
+  <!-- Mini chart: league 3PT shooting fouls per 100 3PA by season (data/final/league_trends.csv), max scaled to 200px -->
+  <g>
+    <line x1="428" y1="380" x2="752" y2="380" stroke="#d9d8d3" stroke-width="2"/>
+    <line x1="695.5" y1="150" x2="695.5" y2="380" stroke="#898781" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <rect x="432.0" y="295.3" width="7.6" height="84.7" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="442.6" y="314.3" width="7.6" height="65.7" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="453.2" y="313.4" width="7.6" height="66.6" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="463.8" y="321.8" width="7.6" height="58.2" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="474.4" y="312.8" width="7.6" height="67.2" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="485.0" y="318.6" width="7.6" height="61.4" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="495.6" y="313.2" width="7.6" height="66.8" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="506.2" y="299.9" width="7.6" height="80.1" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="516.8" y="304.6" width="7.6" height="75.4" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="527.4" y="292.8" width="7.6" height="87.2" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="538.0" y="281.2" width="7.6" height="98.8" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="548.6" y="284.5" width="7.6" height="95.5" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="559.2" y="281.9" width="7.6" height="98.1" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="569.8" y="269.7" width="7.6" height="110.3" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="580.4" y="237.3" width="7.6" height="142.7" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="591.0" y="272.2" width="7.6" height="107.8" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="601.6" y="265.8" width="7.6" height="114.2" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="612.2" y="232.0" width="7.6" height="148.0" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="622.8" y="232.7" width="7.6" height="147.3" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="633.4" y="222.9" width="7.6" height="157.1" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="644.0" y="180.0" width="7.6" height="200.0" rx="2" fill="#2a78d6"/>
+    <rect x="654.6" y="202.9" width="7.6" height="177.1" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="665.2" y="209.7" width="7.6" height="170.3" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="675.8" y="193.2" width="7.6" height="186.8" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="686.4" y="223.7" width="7.6" height="156.3" rx="2" fill="#2a78d6" fill-opacity="0.55"/>
+    <rect x="697.0" y="260.8" width="7.6" height="119.2" rx="2" fill="#2a78d6"/>
+    <rect x="707.6" y="258.2" width="7.6" height="121.8" rx="2" fill="#2a78d6"/>
+    <rect x="718.2" y="274.5" width="7.6" height="105.5" rx="2" fill="#2a78d6"/>
+    <rect x="728.8" y="258.4" width="7.6" height="121.6" rx="2" fill="#2a78d6"/>
+    <rect x="739.4" y="238.4" width="7.6" height="141.6" rx="2" fill="#2a78d6"/>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" fill="#52514e">
+    <text x="647.8" y="164" font-size="17" font-weight="700" text-anchor="middle" fill="#1f2328">1.82</text>
+    <text x="647.8" y="144" font-size="15" text-anchor="middle">2016-17 peak</text>
+    <text x="701.5" y="196" font-size="15" text-anchor="start">2021-22</text>
+    <text x="701.5" y="214" font-size="15" text-anchor="start">crackdown</text>
+    <text x="435.8" y="404" font-size="15" text-anchor="start">1996-97</text>
+    <text x="752" y="404" font-size="15" text-anchor="end">2025-26</text>
+    <text x="590" y="436" font-size="16" text-anchor="middle">3PT shooting fouls per 100 attempts</text>
+  </g>
+</svg>

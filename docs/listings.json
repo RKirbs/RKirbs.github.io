@@ -2,12 +2,14 @@
   {
     "listing": "/index.html",
     "items": [
+      "/projects/ethical-hooper-index/index.html",
       "/projects/fortnite-esports/index.html"
     ]
   },
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/ethical-hooper-index/index.html",
       "/projects/fortnite-esports/index.html"
     ]
   }
