@@ -1,29 +1,36 @@
 # Project cards shown on the Home and Projects pages.
 # An item with a `path` links to its project page; one without (planned work) shows as a card only.
+- title: "Arb Finder: A Free Sports-Betting Arbitrage Web App"
+  subtitle: "✓ Completed · November 2026"
+  description: "A browser-based tool that compares odds across 18 US sportsbooks and exchanges, flags game-line and player-prop arbitrage, sizes the stakes, and explains every step. Built in JavaScript with no server and released free to the public."
+  image: images/arb-finder-cover.svg
+  path: projects/arb-finder/index.qmd
+  categories: [Completed, JavaScript, Web app, API integration, Market efficiency]
+  order: 1
 - title: "The UFC Robbery Detector: Which Decisions Did the Stats Say Went the Wrong Way?"
   subtitle: "✓ Completed · November 2026"
   description: "An R and Quarto study that learns how real UFC judges score rounds, simulates correlated judges, and gives every UFC decision since 2001 a Robbery Score, validated against 51,000 media scorecards and betting markets."
   image: images/ufc-robbery-cover.svg
   path: projects/ufc-robbery-detector/index.qmd
   categories: [Completed, R, Quarto, Machine learning, Simulation, Web scraping]
-  order: 1
+  order: 2
 - title: "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle"
   subtitle: "✓ Completed · November 2026"
   description: "An R and Quarto study of 30 NBA seasons and 6.3 million shots that turns basketball slang into a measurable index, ranks every qualifying scorer since 1996-97, and tests it against the NBA's 2021-22 crackdown on foul-baiting."
   image: images/ethical-hooper-cover.svg
   path: projects/ethical-hooper-index/index.qmd
   categories: [Completed, R, Quarto, Machine learning, Causal inference]
-  order: 2
+  order: 3
 - title: "Competitive Fortnite: Prize Pools, Engagement and Regional Fairness"
   subtitle: "✓ Completed · November 2026"
   description: "An end-to-end R and Quarto study of $209M in esports prize money: how prize pools relate to audience attention, who earns the money, and whether regional prize splits match player bases."
   image: images/fortnite-cover.svg
   path: projects/fortnite-esports/index.qmd
   categories: [Completed, R, Quarto, Econometrics, Web scraping]
-  order: 3
+  order: 4
 - title: "How Efficient Are Sports Betting Markets?"
   subtitle: "◐ In progress"
   description: "A market-efficiency study in R and Quarto: logging odds across six U.S. sportsbooks over several weeks to measure how often pricing gaps (arbitrage) appear, how long they last, how large they are, and which books are slowest to move."
   image: images/arbitrage.svg
   categories: [In progress, R, Quarto, Market efficiency]
-  order: 4
+  order: 5

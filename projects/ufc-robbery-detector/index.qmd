@@ -4,7 +4,7 @@ subtitle: "✓ Completed · November 2026"
 description: "An R and Quarto study that learns how real UFC judges score rounds, simulates correlated judges, and gives every UFC decision since 2001 a Robbery Score, validated against 51,000 media scorecards and betting markets."
 image: ../../images/ufc-robbery-cover.svg
 categories: [Completed, R, Quarto, Machine learning, Simulation, Web scraping]
-order: 1
+order: 2
 ---
 
 

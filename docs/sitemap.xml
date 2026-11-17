@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rkirbs.github.io/index.html</loc>
-    <lastmod>2026-11-09T01:05:35.307Z</lastmod>
+    <lastmod>2026-11-17T22:21:54.027Z</lastmod>
   </url>
   <url>
-    <loc>https://rkirbs.github.io/projects/ufc-robbery-detector/index.html</loc>
-    <lastmod>2026-11-17T17:22:45.254Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rkirbs.github.io/projects/ethical-hooper-index/index.html</loc>
-    <lastmod>2026-11-17T17:22:53.644Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rkirbs.github.io/resume.html</loc>
-    <lastmod>2026-11-09T01:08:07.243Z</lastmod>
+    <loc>https://rkirbs.github.io/projects/arb-finder/index.html</loc>
+    <lastmod>2026-11-17T22:25:47.521Z</lastmod>
   </url>
   <url>
     <loc>https://rkirbs.github.io/projects/fortnite-esports/index.html</loc>
-    <lastmod>2026-11-17T17:22:57.055Z</lastmod>
+    <lastmod>2026-11-17T22:24:24.403Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rkirbs.github.io/resume.html</loc>
+    <lastmod>2026-11-17T22:21:54.035Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rkirbs.github.io/projects/ethical-hooper-index/index.html</loc>
+    <lastmod>2026-11-17T22:24:24.402Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rkirbs.github.io/projects/ufc-robbery-detector/index.html</loc>
+    <lastmod>2026-11-17T22:24:24.402Z</lastmod>
   </url>
   <url>
     <loc>https://rkirbs.github.io/projects.html</loc>
-    <lastmod>2026-11-09T01:05:35.308Z</lastmod>
+    <lastmod>2026-11-17T22:21:54.027Z</lastmod>
   </url>
 </urlset>
