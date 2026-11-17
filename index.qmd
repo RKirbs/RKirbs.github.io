@@ -29,6 +29,7 @@ I'm a senior at Xavier University completing a triple major in Economics, Financ
 ::: {.fact}
 [Education]{.label}
 [Xavier University, B.S.B.A.]{.value}
+[Majors: Finance · Business Analytics & Information Systems (BAIS) · Economics]{.detail}
 :::
 ::: {.fact}
 [Graduating]{.label}
@@ -36,7 +37,7 @@ I'm a senior at Xavier University completing a triple major in Economics, Financ
 :::
 ::: {.fact}
 [GPA]{.label}
-[3.6 / 4.0 · Dean's List]{.value}
+[3.5 / 4.0 · Dean's List]{.value}
 :::
 ::: {.fact}
 [Certifications]{.label}
