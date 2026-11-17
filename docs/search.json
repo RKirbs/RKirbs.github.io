@@ -11,35 +11,63 @@
     "href": "index.html#projects",
     "title": "Robert Kirby",
     "section": "Projects",
-    "text": "Projects\n\n\n\n\n\n\n\n\n\n\nThe Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle\n\n\n✓ Completed · November 2026\n\n\nAn R and Quarto study of 30 NBA seasons and 6.3 million shots that turns basketball slang into a measurable index, ranks every qualifying scorer since 1996-97, and tests it…\n\n\n\n\n\n\n\n\n\n\n\n\nCompetitive Fortnite: Prize Pools, Engagement and Regional Fairness\n\n\n✓ Completed · November 2026\n\n\nAn end-to-end R and Quarto study of $209M in esports prize money: how prize pools relate to audience attention, who earns the money, and whether regional prize splits match…\n\n\n\n\n\n\n\n\n\n\n\n\nHow Efficient Are Sports Betting Markets?\n\n\n◐ In progress\n\n\nA market-efficiency study in R and Quarto: logging odds across six U.S. sportsbooks over several weeks to measure how often pricing gaps (arbitrage) appear, how long they…\n\n\n\n\n\nNo matching items"
+    "text": "Projects\n\n\n\n\n\n\n\n\n\n\nThe UFC Robbery Detector: Which Decisions Did the Stats Say Went the Wrong Way?\n\n\n✓ Completed · November 2026\n\n\nAn R and Quarto study that learns how real UFC judges score rounds, simulates correlated judges, and gives every UFC decision since 2001 a Robbery Score, validated against…\n\n\n\n\n\n\n\n\n\n\n\n\nThe Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle\n\n\n✓ Completed · November 2026\n\n\nAn R and Quarto study of 30 NBA seasons and 6.3 million shots that turns basketball slang into a measurable index, ranks every qualifying scorer since 1996-97, and tests it…\n\n\n\n\n\n\n\n\n\n\n\n\nCompetitive Fortnite: Prize Pools, Engagement and Regional Fairness\n\n\n✓ Completed · November 2026\n\n\nAn end-to-end R and Quarto study of $209M in esports prize money: how prize pools relate to audience attention, who earns the money, and whether regional prize splits match…\n\n\n\n\n\n\n\n\n\n\n\n\nHow Efficient Are Sports Betting Markets?\n\n\n◐ In progress\n\n\nA market-efficiency study in R and Quarto: logging odds across six U.S. sportsbooks over several weeks to measure how often pricing gaps (arbitrage) appear, how long they…\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/fortnite-esports/index.html",
-    "href": "projects/fortnite-esports/index.html",
-    "title": "Competitive Fortnite: Prize Pools, Engagement and Regional Fairness",
+    "objectID": "projects/ufc-robbery-detector/index.html",
+    "href": "projects/ufc-robbery-detector/index.html",
+    "title": "The UFC Robbery Detector: Which Decisions Did the Stats Say Went the Wrong Way?",
     "section": "",
-    "text": "Read the full report View the code on GitHub Project summary (PDF)"
+    "text": "Read the full report Browse the leaderboard View the code on GitHub"
   },
   {
-    "objectID": "projects/fortnite-esports/index.html#the-question",
-    "href": "projects/fortnite-esports/index.html#the-question",
-    "title": "Competitive Fortnite: Prize Pools, Engagement and Regional Fairness",
+    "objectID": "projects/ufc-robbery-detector/index.html#the-question",
+    "href": "projects/ufc-robbery-detector/index.html#the-question",
+    "title": "The UFC Robbery Detector: Which Decisions Did the Stats Say Went the Wrong Way?",
     "section": "The question",
-    "text": "The question\nFortnite’s developer, Epic Games, runs one of the largest competitive gaming circuits in the world. I asked four questions about it: Does prize money move with public interest in the game? Do major tournaments draw more attention? As prize money changed, did more players earn a share or did it concentrate at the top? And is prize money split between world regions in proportion to how many people play there?"
+    "text": "The question\nEvery fight fan has a list of “robberies”: decisions they’re sure went to the wrong fighter. I wanted to test that claim with data. Given what actually happened in each round (strikes, knockdowns, takedowns, control time), how likely was the declared winner to get the decision from real judges? I call one minus that probability the Robbery Score. It measures disagreement between the statistics and the result. It is never an accusation of judge misconduct, because statistics can’t see everything judges can."
   },
   {
-    "objectID": "projects/fortnite-esports/index.html#what-i-did",
-    "href": "projects/fortnite-esports/index.html#what-i-did",
-    "title": "Competitive Fortnite: Prize Pools, Engagement and Regional Fairness",
+    "objectID": "projects/ufc-robbery-detector/index.html#what-i-did",
+    "href": "projects/ufc-robbery-detector/index.html#what-i-did",
+    "title": "The UFC Robbery Detector: Which Decisions Did the Stats Say Went the Wrong Way?",
     "section": "What I did",
-    "text": "What I did\n\nCollected the data myself from seven sources: $209.1M of prize money across 2,674 tournaments and 11,443 players, 113 months of Twitch viewership, weekly Google search interest, World Bank and Census data, and 26 seasons of regional championship prize pools. Every request followed each site’s rules on automated access, with delays between requests.\nValidated everything. Automated checks reconcile my totals with the source’s own published figures. They caught a $2.0M event missing from the source’s listings and multi-game events that would have double counted money.\nAnalysed it four ways: time series comparisons (in levels and in changes, to avoid spurious correlation), an event study with season controls and Newey-West standard errors, inequality measures (Gini coefficients, Lorenz curves, top-N shares), and a regional allocation analysis tested under three different player-base proxies.\nWrote it up as a reproducible Quarto report that explains the game and every method for non-specialist readers, with the code folded under each result."
+    "text": "What I did\n\nBuilt and linked three data sources:\n\nround-by-round statistics for every UFC fight, from UFCStats;\nevery judge’s round-by-round scorecard plus 51,355 media scorecards, from MMADecisions, collected with the site owner’s permission;\nhistorical betting lines from BestFightOdds.\n\nAll 4,109 decisions from 2001 to November 2026 were linked across the sources. I checked the robots.txt and terms of every site, paused between requests and cached every page.\nFound and fixed two data problems before reporting anything:\n\nPoint deductions: MMADecisions round scores already include them, so a 10-9 round with a point taken away looked like a 9-9 “draw” (109 deductions in 105 fights).\nFighter order: UFCStats lists the winner first, not the red corner, for fights before March 2010.\n\nTrained a round model on 33,444 real judge round scores. It predicts which fighter a judge gives each round from that round’s statistics alone. Training rounds were mirrored so the model can’t learn “the red corner wins”. I compared logistic regression, glmnet and xgboost (tidymodels) with grouped cross-validation by fight and a 2020–2026 time-based test. Every model cut log-loss by about 30% against a “whoever landed more strikes wins” baseline (0.38 vs. 0.55).\nSimulated 10,000 sets of three correlated judges for every fight.\n\nThe correlation between judges was estimated by maximum likelihood. It reproduces how often real judges split on a round: 22.0% observed vs. 22.2% predicted, where independent judges would split 35.9% of the time.\nThe simulation also models 10-8 rounds, 10-10 rounds and point deductions.\nIt uses out-of-fold predictions, so no fight’s own scorecards inform its own score.\n\nValidated the score against independent evidence: media scorecards the model never sees, a hand-picked list of widely debated decisions, calibration checks, and a sensitivity test with a different model (rank correlation 0.987).\nStudied the judges with mixed models that have judge random effects. I estimated red-corner and betting-favourite effects, and tested whether the 2017 Unified Rules scoring criteria changed what judges reward.\nPublished it as a seven-page Quarto website with a searchable leaderboard and round-by-round breakdowns of featured fights. The whole thing is a reproducible targets pipeline with renv-pinned packages, and no number in the write-up is typed by hand."
   },
   {
-    "objectID": "projects/fortnite-esports/index.html#what-i-found",
-    "href": "projects/fortnite-esports/index.html#what-i-found",
-    "title": "Competitive Fortnite: Prize Pools, Engagement and Regional Fairness",
+    "objectID": "projects/ufc-robbery-detector/index.html#what-i-found",
+    "href": "projects/ufc-robbery-detector/index.html#what-i-found",
+    "title": "The UFC Robbery Detector: Which Decisions Did the Stats Say Went the Wrong Way?",
     "section": "What I found",
-    "text": "What I found\n\nPrize money and public attention follow different paths: viewership and search interest fell steadily after 2018 while prize money held up until 2024, and month-to-month changes are essentially uncorrelated.\nTournaments barely move mainstream attention (about +3% in a finals week) compared with new game seasons (about +28%).\nFrom 2019 to 2025 prize money fell 84% while the number of players earning anything fell only 32%, and the top 100 earners’ share rose from 44% to 65%.\nA common belief among players, that Europe is underpaid relative to North America Central, is not supported: Europe receives 1.14x its share of players and NA Central 0.99x. The largest gaps are in smaller regions.\n\n\n\n\nPrize share vs. player share by region, 2025-2026\n\n\n\n\n\nPrize money vs. attention, indexed to 2018\n\n\nTools: R (tidyverse, httr2, rvest, gtrendsR, sandwich, ineq), Quarto, Git/GitHub."
+    "text": "What I found\n\nAbout 1 in 18 decisions is a statistical “robbery”. 225 of 4,049 decisions (5.6%) have a Robbery Score of at least 0.75. The highest scores belong to Igor Pokrajac vs. Fabio Maldonado (2012) and Leonard Garcia vs. Nam Phan (2010).\nThe score lines up with people who watched the fights. It correlates with the share of media scoring the fight for the loser at r = 0.59. The stats-only model agrees with the media majority 87.7% of the time, close to the official result’s 89.8%. 11 of 13 widely debated decisions rank in the top 16%.\nWhat judges reward, measured in significant head strikes:\n\na knockdown is worth about 12;\na submission attempt about 5;\na minute of control about 3;\na takedown about 2;\na failed takedown attempt costs about 0.7.\n\nJudges lean slightly toward the red corner and the betting favourite. On a round the stats call 50/50, the red corner gets about 4.7 points more, and a −300 favourite about 6.5 points more. Adjusted for how hard their fights were to score, individual judges agree with the stats at very similar rates.\nThe 2017 criteria changed what judges reward, but not how often decisions go “wrong”. A knockdown rose from about 9 to 15 head strikes and a takedown fell from 2.7 to 1.9 (joint test p = 0.0006). The Robbery-tier rate showed no clear change.\n\n\n\n\nRound-by-round breakdown of the decision with the highest Robbery Score\n\n\n\n\n\nWhat judges reward: each statistic’s value in significant head strikes\n\n\n\n\n\nThe Robbery Score against media scorecards\n\n\nTools: R (targets, tidymodels, xgboost, glmnet, lme4, sandwich, shapviz, rvest/httr2, arrow, ggplot2, patchwork, gt, reactable), Quarto, renv, Git/GitHub."
+  },
+  {
+    "objectID": "projects/ethical-hooper-index/index.html",
+    "href": "projects/ethical-hooper-index/index.html",
+    "title": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle",
+    "section": "",
+    "text": "Read the full report Search any player View the code on GitHub"
+  },
+  {
+    "objectID": "projects/ethical-hooper-index/index.html#the-question",
+    "href": "projects/ethical-hooper-index/index.html#the-question",
+    "title": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle",
+    "section": "The question",
+    "text": "The question\n“Ethical hooper” is basketball slang for a player who scores through pure skill (clean footwork, natural shot-making, smooth handles) rather than foul-baiting, flopping, or jumping into defenders to draw a whistle. I wanted to know whether that idea could be measured. Who are the most and least “ethical” scorers since 1996-97? And when the NBA told referees in 2021-22 to stop rewarding “non-basketball moves,” did it hit the players my index had flagged?"
+  },
+  {
+    "objectID": "projects/ethical-hooper-index/index.html#what-i-did",
+    "href": "projects/ethical-hooper-index/index.html#what-i-did",
+    "title": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle",
+    "section": "What I did",
+    "text": "What I did\n\nBuilt the dataset from 30 seasons of NBA play-by-play and shot charts (1996-97 to 2025-26, regular season and playoffs): 6.3 million shots and every foul and free throw, linked to official minutes and positions from Basketball Reference.\nValidated it against independent sources. My counts of shooting fouls drawn, and-ones, offensive fouls and assisted shots match Basketball Reference’s own tables (correlations of 0.998 or higher), and attempts, free throws and turnovers match official totals within ±2 for every 1,000-minute season. The checks also caught real problems: 16 games missing from the source archive, a 2025-26 change in how the NBA logs end-of-quarter heaves, and Hall of Famers’ playoff seasons filed under a different name.\nTrained an expected-field-goal model (xgboost) on shot location, distance, shot type, game clock and season, but never on who took the shot. It beat a zone-average baseline on a held-out season (log-loss 0.639 vs. 0.657) and is closely calibrated.\nDesigned the index from eight components on two axes. Skill: shot-making above expected, self-created makes, shot difficulty and clean footwork. Whistle: free throws beyond what a player’s shot diet predicts, three-point fouls drawn, free-throw share of points, and and-ones on jumpers. I used empirical-Bayes shrinkage so small samples don’t create fake extremes, and standardized everything within season so eras compare fairly.\nRan a difference-in-differences and event study of the 2021-22 rule change, with a placebo rule date and a separate treatment window to rule out regression to the mean.\nPublished it as an eight-page Quarto website with searchable rankings and an interactive player lookup."
+  },
+  {
+    "objectID": "projects/ethical-hooper-index/index.html#what-i-found",
+    "href": "projects/ethical-hooper-index/index.html#what-i-found",
+    "title": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle",
+    "section": "What I found",
+    "text": "What I found\n\nSteve Nash is the most ethical hooper of the last 30 years (career score 87.7 out of 100), followed by Payton Pritchard, Ish Smith, Nikola Vučević and Chris Paul. James Harden ranks last of 417 qualifying careers (10.7).\nThe style is a real, lasting trait: a player’s score correlates 0.74 with the next season’s, and the rankings barely change under alternative weightings (rank correlations of 0.89 to 0.99).\nThe crackdown worked league-wide: three-point shooting fouls fell from 1.42 to 1.08 per 100 attempts in one season. The apparent extra drop for prior foul-drawers turned out to be mostly regression to the mean, since a fake “placebo” rule date shows a similar decline.\nBut the index predicted who lost efficiency: players with higher pre-rule Whistle Scores lost 0.38 points of true shooting per standard deviation afterward (p = 0.049), while the placebo showed nothing (p = 0.81).\n\n\n\n\nThe Ethical Hooper map: every qualifying career, Skill Score vs. Whistle Score\n\n\n\n\n\nFoul-drawers lost efficiency after the 2021-22 crackdown\n\n\nTools: R (data.table, arrow, xgboost, fixest, ggplot2, gt, reactable), Quarto with Observable JS, renv, Git/GitHub."
   },
   {
     "objectID": "resume.html",
@@ -91,38 +119,38 @@
     "text": "Economics & Finance: Econometrics, Regression Analysis, Financial Modeling, Financial Statement Analysis, Forecasting, Variance Analysis, Budget Tracking, Valuation, Statistical Modeling\nTechnical: Excel (PivotTables, XLOOKUP, INDEX/MATCH, SUMIFS), SQL, Python, R/RStudio, Tableau, Bloomberg Terminal\nCertifications: Bloomberg Market Concepts (BMC), Tableau Desktop Specialist\nLanguages: Intermediate Spanish"
   },
   {
-    "objectID": "projects/ethical-hooper-index/index.html",
-    "href": "projects/ethical-hooper-index/index.html",
-    "title": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle",
+    "objectID": "projects/fortnite-esports/index.html",
+    "href": "projects/fortnite-esports/index.html",
+    "title": "Competitive Fortnite: Prize Pools, Engagement and Regional Fairness",
     "section": "",
-    "text": "Read the full report Search any player View the code on GitHub"
+    "text": "Read the full report View the code on GitHub Project summary (PDF)"
   },
   {
-    "objectID": "projects/ethical-hooper-index/index.html#the-question",
-    "href": "projects/ethical-hooper-index/index.html#the-question",
-    "title": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle",
+    "objectID": "projects/fortnite-esports/index.html#the-question",
+    "href": "projects/fortnite-esports/index.html#the-question",
+    "title": "Competitive Fortnite: Prize Pools, Engagement and Regional Fairness",
     "section": "The question",
-    "text": "The question\n“Ethical hooper” is basketball slang for a player who scores through pure skill (clean footwork, natural shot-making, smooth handles) rather than foul-baiting, flopping, or jumping into defenders to draw a whistle. I wanted to know whether that idea could be measured. Who are the most and least “ethical” scorers since 1996-97? And when the NBA told referees in 2021-22 to stop rewarding “non-basketball moves,” did it hit the players my index had flagged?"
+    "text": "The question\nFortnite’s developer, Epic Games, runs one of the largest competitive gaming circuits in the world. I asked four questions about it: Does prize money move with public interest in the game? Do major tournaments draw more attention? As prize money changed, did more players earn a share or did it concentrate at the top? And is prize money split between world regions in proportion to how many people play there?"
   },
   {
-    "objectID": "projects/ethical-hooper-index/index.html#what-i-did",
-    "href": "projects/ethical-hooper-index/index.html#what-i-did",
-    "title": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle",
+    "objectID": "projects/fortnite-esports/index.html#what-i-did",
+    "href": "projects/fortnite-esports/index.html#what-i-did",
+    "title": "Competitive Fortnite: Prize Pools, Engagement and Regional Fairness",
     "section": "What I did",
-    "text": "What I did\n\nBuilt the dataset from 30 seasons of NBA play-by-play and shot charts (1996-97 to 2025-26, regular season and playoffs): 6.3 million shots and every foul and free throw, linked to official minutes and positions from Basketball Reference.\nValidated it against independent sources. My counts of shooting fouls drawn, and-ones, offensive fouls and assisted shots match Basketball Reference’s own tables (correlations of 0.998 or higher), and attempts, free throws and turnovers match official totals within ±2 for every 1,000-minute season. The checks also caught real problems: 16 games missing from the source archive, a 2025-26 change in how the NBA logs end-of-quarter heaves, and Hall of Famers’ playoff seasons filed under a different name.\nTrained an expected-field-goal model (xgboost) on shot location, distance, shot type, game clock and season, but never on who took the shot. It beat a zone-average baseline on a held-out season (log-loss 0.639 vs. 0.657) and is closely calibrated.\nDesigned the index from eight components on two axes. Skill: shot-making above expected, self-created makes, shot difficulty and clean footwork. Whistle: free throws beyond what a player’s shot diet predicts, three-point fouls drawn, free-throw share of points, and and-ones on jumpers. I used empirical-Bayes shrinkage so small samples don’t create fake extremes, and standardized everything within season so eras compare fairly.\nRan a difference-in-differences and event study of the 2021-22 rule change, with a placebo rule date and a separate treatment window to rule out regression to the mean.\nPublished it as an eight-page Quarto website with searchable rankings and an interactive player lookup."
+    "text": "What I did\n\nCollected the data myself from seven sources: $209.1M of prize money across 2,674 tournaments and 11,443 players, 113 months of Twitch viewership, weekly Google search interest, World Bank and Census data, and 26 seasons of regional championship prize pools. Every request followed each site’s rules on automated access, with delays between requests.\nValidated everything. Automated checks reconcile my totals with the source’s own published figures. They caught a $2.0M event missing from the source’s listings and multi-game events that would have double counted money.\nAnalysed it four ways: time series comparisons (in levels and in changes, to avoid spurious correlation), an event study with season controls and Newey-West standard errors, inequality measures (Gini coefficients, Lorenz curves, top-N shares), and a regional allocation analysis tested under three different player-base proxies.\nWrote it up as a reproducible Quarto report that explains the game and every method for non-specialist readers, with the code folded under each result."
   },
   {
-    "objectID": "projects/ethical-hooper-index/index.html#what-i-found",
-    "href": "projects/ethical-hooper-index/index.html#what-i-found",
-    "title": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle",
+    "objectID": "projects/fortnite-esports/index.html#what-i-found",
+    "href": "projects/fortnite-esports/index.html#what-i-found",
+    "title": "Competitive Fortnite: Prize Pools, Engagement and Regional Fairness",
     "section": "What I found",
-    "text": "What I found\n\nSteve Nash is the most ethical hooper of the last 30 years (career score 87.7 out of 100), followed by Payton Pritchard, Ish Smith, Nikola Vučević and Chris Paul. James Harden ranks last of 417 qualifying careers (10.7).\nThe style is a real, lasting trait: a player’s score correlates 0.74 with the next season’s, and the rankings barely change under alternative weightings (rank correlations of 0.89 to 0.99).\nThe crackdown worked league-wide: three-point shooting fouls fell from 1.42 to 1.08 per 100 attempts in one season. The apparent extra drop for prior foul-drawers turned out to be mostly regression to the mean, since a fake “placebo” rule date shows a similar decline.\nBut the index predicted who lost efficiency: players with higher pre-rule Whistle Scores lost 0.38 points of true shooting per standard deviation afterward (p = 0.049), while the placebo showed nothing (p = 0.81).\n\n\n\n\nThe Ethical Hooper map: every qualifying career, Skill Score vs. Whistle Score\n\n\n\n\n\nFoul-drawers lost efficiency after the 2021-22 crackdown\n\n\nTools: R (data.table, arrow, xgboost, fixest, ggplot2, gt, reactable), Quarto with Observable JS, renv, Git/GitHub."
+    "text": "What I found\n\nPrize money and public attention follow different paths: viewership and search interest fell steadily after 2018 while prize money held up until 2024, and month-to-month changes are essentially uncorrelated.\nTournaments barely move mainstream attention (about +3% in a finals week) compared with new game seasons (about +28%).\nFrom 2019 to 2025 prize money fell 84% while the number of players earning anything fell only 32%, and the top 100 earners’ share rose from 44% to 65%.\nA common belief among players, that Europe is underpaid relative to North America Central, is not supported: Europe receives 1.14x its share of players and NA Central 0.99x. The largest gaps are in smaller regions.\n\n\n\n\nPrize share vs. player share by region, 2025-2026\n\n\n\n\n\nPrize money vs. attention, indexed to 2018\n\n\nTools: R (tidyverse, httr2, rvest, gtrendsR, sandwich, ineq), Quarto, Git/GitHub."
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "The Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle\n\n\n✓ Completed · November 2026\n\n\n\nCompleted\n\nR\n\nQuarto\n\nMachine learning\n\nCausal inference\n\n\n\nAn R and Quarto study of 30 NBA seasons and 6.3 million shots that turns basketball slang into a measurable index, ranks every qualifying scorer since 1996-97, and tests it…\n\n\n\n\n\n\n\n\n\n\n\n\nCompetitive Fortnite: Prize Pools, Engagement and Regional Fairness\n\n\n✓ Completed · November 2026\n\n\n\nCompleted\n\nR\n\nQuarto\n\nEconometrics\n\nWeb scraping\n\n\n\nAn end-to-end R and Quarto study of $209M in esports prize money: how prize pools relate to audience attention, who earns the money, and whether regional prize splits match…\n\n\n\n\n\n\n\n\n\n\n\n\nHow Efficient Are Sports Betting Markets?\n\n\n◐ In progress\n\n\n\nIn progress\n\nR\n\nQuarto\n\nMarket efficiency\n\n\n\nA market-efficiency study in R and Quarto: logging odds across six U.S. sportsbooks over several weeks to measure how often pricing gaps (arbitrage) appear, how long they…\n\n\n\n\n\nNo matching items"
+    "text": "The UFC Robbery Detector: Which Decisions Did the Stats Say Went the Wrong Way?\n\n\n✓ Completed · November 2026\n\n\n\nCompleted\n\nR\n\nQuarto\n\nMachine learning\n\nSimulation\n\nWeb scraping\n\n\n\nAn R and Quarto study that learns how real UFC judges score rounds, simulates correlated judges, and gives every UFC decision since 2001 a Robbery Score, validated against…\n\n\n\n\n\n\n\n\n\n\n\n\nThe Ethical Hooper Index: NBA Scoring, Skill vs. the Whistle\n\n\n✓ Completed · November 2026\n\n\n\nCompleted\n\nR\n\nQuarto\n\nMachine learning\n\nCausal inference\n\n\n\nAn R and Quarto study of 30 NBA seasons and 6.3 million shots that turns basketball slang into a measurable index, ranks every qualifying scorer since 1996-97, and tests it…\n\n\n\n\n\n\n\n\n\n\n\n\nCompetitive Fortnite: Prize Pools, Engagement and Regional Fairness\n\n\n✓ Completed · November 2026\n\n\n\nCompleted\n\nR\n\nQuarto\n\nEconometrics\n\nWeb scraping\n\n\n\nAn end-to-end R and Quarto study of $209M in esports prize money: how prize pools relate to audience attention, who earns the money, and whether regional prize splits match…\n\n\n\n\n\n\n\n\n\n\n\n\nHow Efficient Are Sports Betting Markets?\n\n\n◐ In progress\n\n\n\nIn progress\n\nR\n\nQuarto\n\nMarket efficiency\n\n\n\nA market-efficiency study in R and Quarto: logging odds across six U.S. sportsbooks over several weeks to measure how often pricing gaps (arbitrage) appear, how long they…\n\n\n\n\n\nNo matching items"
   }
 ]

@@ -4,7 +4,7 @@ subtitle: "✓ Completed · November 2026"
 description: "An end-to-end R and Quarto study of $209M in esports prize money: how prize pools relate to audience attention, who earns the money, and whether regional prize splits match player bases."
 image: ../../images/fortnite-cover.svg
 categories: [Completed, R, Quarto, Econometrics, Web scraping]
-order: 1
+order: 3
 ---
 
 
